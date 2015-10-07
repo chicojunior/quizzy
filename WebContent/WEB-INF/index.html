@@ -10,30 +10,8 @@
 	</head>
 
 	<body>
-		<div class="bs-example">
-			<div class="div-body" align="center" margin="10px">
-				<img src="app/img/quizzy.png" width="250px" height="250px">
-			</div>
-
-		<div class="div-body" align="center">
-			<div class="div-body">
-				<a href="#/cadastro_questionario" class="btn btn-default btn-lg" role="button">Crie seu Quizz!</a>
-			</div>
-
-			<div class="div-body">
-				<button type="button" class="btn btn-default btn-lg">Responda a um quiz.</button>	
-			</div>
-		</div>
-
-			<footer>
-				<div class="div-footer" align="center">
-					<a href="http://chicojunior.github.io">Blog do Chico</a>	
-				</div>
 			
-			</footer>
-		</div>
 
-		
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
@@ -41,7 +19,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script src="app/app.js"></script>
-		<script src="app/js/controller/UsuarioController.js"></script>
+		<script src="app/js/controllers/UsuarioController.js"></script>
+
+		<div ng-view></div>	
 	</body>
 
 </html>
