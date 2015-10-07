@@ -2,9 +2,84 @@
 <html lang="pt">
 <head>
 	<meta charset="UTF-8">
-	<title>Questionário</title>
+	<title>Novo Questionário</title>
+  <link rel="stylesheet" type="text/css" href="app/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 </head>
 <body>
-<h1>Novo Questionário...</h1>
+
+  <h1 class="pad-text" align="top">Novo Questionário</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" align="left">
+        <form class="form-horizontal" name="formQuizHeader">
+
+          <div class="form-group">
+            <label>Nome do Questionário:</label>
+            <input type="text" name="nomeQuiz" size="25" class="form-control" ng-model="quiz.nome">
+          </div>
+
+          <div class="form-group">
+            <label>Descrição do Questionário:</label>
+            <textarea class="form-control" rows="5" ng-model="quiz.descricao"></textarea>
+          </div>
+
+          <form class="form-horizontal" name="formQuizbody">
+
+          <div class="form-group">
+            <label>Questão:</label>
+            <input type="text" name="questao" size="30" class="form-control" ng-model="quiz.questao">
+          </div>
+
+          <div class="col-lg-8">
+            <label>Item A</label>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <input type="radio" aria-label="...">
+              </span>
+              <input type="text" class="form-control" aria-label="...">
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <label>Item B</label>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <input type="radio" aria-label="...">
+              </span>
+              <input type="text" class="form-control" aria-label="...">
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <label>Item C</label>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <input type="radio" aria-label="...">
+              </span>
+              <input type="text" class="form-control" aria-label="...">
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <label>Item D</label>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <input type="radio" aria-label="...">
+              </span>
+              <input type="text" class="form-control" aria-label="...">
+            </div>
+          </div>
+
+
+
+        </form>
+        <button class="btn btn-default">Salvar questão</button>
+        <button class="btn btn-default">Salvar questionário</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

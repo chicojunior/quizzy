@@ -5,3 +5,19 @@
 .div-body {
 	padding: 10px;
 }
+
+.text-desc {
+  display: block;
+}
+
+.div-color {
+  background-color: gray;
+}
+
+.div-long {
+  padding-left: 20px;
+}
+
+.pad-text {
+  padding-left: 10px;
+}
